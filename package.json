@@ -15,6 +15,10 @@
       "url": "https://github.com/myork/fuzzy/blob/master/LICENSE-MIT"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tofferPika/node-aircode.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
