@@ -1,0 +1,25 @@
+{
+  "name": "aircode",
+  "version": "0.1.0",
+  "description": "Codea AirCode proxy",
+  "main": "index.js",
+  "keywords": [
+    "Codea",
+    "AirCode",
+    "REPL"
+  ],
+  "author": "Corbin Christopher <contact@toffer.net>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/myork/fuzzy/blob/master/LICENSE-MIT"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cheerio": "~0.14.0",
+    "request": "~2.34.0"
+  }
+}
