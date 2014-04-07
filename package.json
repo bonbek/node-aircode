@@ -1,8 +1,8 @@
 {
-  "name": "aircode",
-  "version": "0.1.0",
+  "name": "node-aircode",
+  "version": "0.2.0",
   "description": "Codea AirCode proxy",
-  "main": "index.js",
+  "main": "lib/node-aircode",
   "keywords": [
     "Codea",
     "AirCode",
@@ -12,7 +12,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/myork/fuzzy/blob/master/LICENSE-MIT"
+      "url": "https://github.com/tofferPika/node-aircode/blob/master/LICENSE"
     }
   ],
   "repository": {
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "cheerio": "~0.14.0",
-    "request": "~2.34.0"
+    "request": "~2.34.0",
+    "chokidar": "~0.8.2"
   }
 }

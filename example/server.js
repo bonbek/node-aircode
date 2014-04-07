@@ -1,37 +1,3 @@
-node-aircode
-============
-
-Package to handle Codea AirCode from Node.js.
-
-**features**
-- pull / push buffers
-- sync local folders with projects: local files created/deleted will create/delete their corresponding project tabs
-- eval code without Codea save tab
-- eval and save dependencies of the running project when local file are updated (create/delete/update files)
-- catch local file changes (ie:prevent AirCode update, transform buffer content, redirect update to a different project/tab...)
-
-**notes**
-
-The sync is done per 'session'. Local files are updated each time a projet is opened from node-aircode, during the process, local files will be overwritten by Codea's buffers, there is no versionning between local files and Codea buffers. Once a project is opened, local files take precedence on Codea buffers. So, updates done to local files when AirCode/node-aircode isn't running will be lost the next time AirCode/node-aircode will be launched.
-
-### Installation
-
-**from git** npm install git://github.com/tofferPika/node-aircode.git
-
-### Api
-
-*TODO*
-
-### Usage
-
-#### Server example (sync with local folder)
-
-included in the example folder, to try it:
-```
-$ node example/server.js [your AirCode host] [project to open]
-```
-
-```javascript
 var fs = require('fs')
 	,aircode = require('../lib/node-aircode');
 
@@ -97,17 +63,3 @@ proxy.connect(function handleConnect(err,projectsList) {
 		console.log('...',buffer.name,'recieved');
 	});
 });
-
-```
-
-### Issues
-
-This project is in it's early state, a lot of tests must be done, mostly for the Sync mode, feel free to report any bugs. Also feedback and features requests are greatly encouraged !
-
-Even if AirCode is an amazing tool, be carefull that it's a bit puzzling. Some tendency to delete tabs...
-So watch to keep your projects safe.
-
-### Release history
-
-* 0.1.0 Initial release
-* 0.2.0 Sync local folders, create/delete handling, dependencies eval, server example.
