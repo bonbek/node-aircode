@@ -1,6 +1,6 @@
 {
   "name": "node-aircode",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Codea AirCode proxy",
   "main": "lib/node-aircode",
   "keywords": [
